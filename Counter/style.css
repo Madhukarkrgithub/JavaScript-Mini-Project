@@ -1,0 +1,61 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+}
+body{
+    background-color: rgb(30, 30, 68);
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.card-body{
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+.card-body h1{
+    margin-bottom: 20px;
+    font-size: 70px;
+
+}
+.card-btn button{
+    color: rgb(235, 235, 235);
+    border-radius: 8px;
+    padding: 10px 35px;
+    border: none;
+    font-weight: bold;
+    margin: 0px 8px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#dec{
+    background: rgb(20, 197, 20);
+}
+#dec:hover{
+    box-shadow: rgba(79, 146, 64, 0.9) 0px 0px 10px 0px;
+    color: black;
+    transform: scale(1.05);
+}
+#reset{
+    background: red;
+}
+#reset:hover{
+    box-shadow: rgb(168, 41, 41) 0px 0px 10px 0px;
+    color: black;
+    transform: scale(1.05);
+}
+#inc{
+    background: blue;
+}
+#inc:hover{
+    box-shadow: rgba(51, 59, 167, 0.9) 0px 0px 10px 0px;
+    color: black;
+    transform: scale(1.05);
+}

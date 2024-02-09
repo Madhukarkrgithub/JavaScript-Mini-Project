@@ -1,0 +1,109 @@
+/* body{
+    background-color: black;
+    #2c3e50
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#container{
+    background-color: rgb(32, 31, 31);
+}
+#time{
+    border: 2px solid red;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.digit{
+    font-size: 150px;
+    font-weight: bold;
+}
+.txt{
+    font-size: 40px;
+    font-weight: bold;
+}
+#btn-container{
+    text-align: center;
+    margin-top: 40px;
+}
+.btn{
+    padding: 7px 25px;
+    font-size: 15px;
+    margin: 0px 10px;
+    border-radius: 8px;
+    color: white;
+    border: 0;
+    cursor: pointer;
+} */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: rgb(32, 31, 31); */
+}
+#container{
+    background-color: rgb(32, 31, 31);
+}
+#time{
+    /* border: 2px solid red; */
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.digit{
+    font-size: 150px;
+    font-weight: bold;
+    color: rgb(238, 174, 10);
+    font-family: clockicons,sans-serif;
+    margin-top: 150px;
+}
+.txt{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(0, 255, 221);
+}
+#btn-container{
+    text-align: center;
+    margin-top: 40px;
+}
+.btn{
+    padding: 10px 30px;
+    font-size: 20px;
+    margin: 0px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 100px;
+    color: white;
+}
+#start{
+    background-color: rgb(33, 234, 33);
+}
+#start:hover{
+    box-shadow: rgb(39, 161, 39) 0px 0px 10px 0px;
+    color: black;
+    transform: scale(1.05);
+}
+#stop{
+    background-color: rgb(19, 19, 233);
+}
+#stop:hover{
+    box-shadow: rgb(29, 29, 156) 0px 0px 10px 0px;
+    color: black;
+    transform: scale(1.05);
+}
+#reset{
+    background-color: rgb(230, 18, 18);
+}
+#reset:hover{
+    box-shadow: rgb(168, 41, 41) 0px 0px 10px 0px;
+    color: black;
+    transform: scale(1.05);
+}

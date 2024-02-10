@@ -17,10 +17,10 @@ Javascript
 # Snapshots of Pages
 
 # Counter App
-![image](./Image/Counter.JPG);
+![image](./Image/Counter.JPG)
 
 # Stop-Watch
-![image](./Image/Stopwatch.JPG);
+![image](./Image/Stopwatch.JPG)
 
 # Analog Clock
-![image](./Image/Analog-Clock.JPG);
+![image](./Image/Analog-Clock.JPG)

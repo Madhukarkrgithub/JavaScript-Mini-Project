@@ -103,3 +103,64 @@ button {
   color: #eee;
   border: 2px solid red;
 }
+
+.btn-red:hover {
+    background-color: blanchedalmond;
+    transform: scale(1.05);
+    color: black;
+    border: 2px solid red;
+    box-shadow: rgb(228, 6, 6) 0px 4px 12px;
+  }
+  
+  .btn-red:active {
+    background-color: #d88;
+  }
+  
+  .btn-blue {
+    background-color: #4b09bd;
+    color: white;
+    border: 2px solid blueviolet;
+  }
+  
+  .btn-blue:hover {
+  box-shadow: rgba(130, 35, 216, 0.9) 0px 0px 10px 0px;
+  color: black;
+  transform: scale(1.05);
+  }
+  
+  .btn-blue:active {
+    background-color: #88d;
+  }
+  
+  /* Disables input spinners in calc screen */
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* FOOTER */
+  
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+  }
+  
+  .fa-github {
+    color: blue;
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
+  }

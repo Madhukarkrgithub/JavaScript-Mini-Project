@@ -31,3 +31,52 @@ function appendNumber(number) {
     resetScreen();
   currentOperationScreen.textContent += number;
 }
+
+function resetScreen() {
+    currentOperationScreen.textContent = '';
+    shouldResetScreen = false;
+  }
+  
+  function clear() {
+    currentOperationScreen.textContent = '0';
+    lastOperationScreen.textContent = '';
+    firstOperand = '';
+    secondOperand = '';
+    currentOperation = null;
+  }
+  
+  function appendPoint() {
+    if (shouldResetScreen) resetScreen();
+    if (currentOperationScreen.textContent === '')
+      currentOperationScreen.textContent = '0';
+    if (currentOperationScreen.textContent.includes('.')) return;
+    currentOperationScreen.textContent += '.';
+  }
+  
+  function deleteNumber() {
+    currentOperationScreen.textContent = currentOperationScreen.textContent
+      .toString()
+      .slice(0, -1);
+  }
+  
+  function setOperation(operator) {
+    if (currentOperation !== null) evaluate();
+    firstOperand = currentOperationScreen.textContent;
+    currentOperation = operator;
+    lastOperationScreen.textContent = `${firstOperand} ${currentOperation}`;
+    shouldResetScreen = true;
+  }
+  
+  function evaluate() {
+    if (currentOperation === null || shouldResetScreen) return;
+    if (currentOperation === '÷' && currentOperationScreen.textContent === '0') {
+      alert("You can't divide by 0!");
+      return;
+    }
+    secondOperand = currentOperationScreen.textContent;
+    currentOperationScreen.textContent = roundResult(
+      operate(currentOperation, firstOperand, secondOperand)
+    );
+    lastOperationScreen.textContent = `${firstOperand} ${currentOperation} ${secondOperand} =`;
+    currentOperation = null;
+  }

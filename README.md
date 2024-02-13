@@ -25,5 +25,5 @@ Javascript
 # Analog Clock
 ![image](./Image/Analog-Clock.JPG)
 
-# Analog Clock
+# Calculator
 ![image](./Image/calcul.JPG)
